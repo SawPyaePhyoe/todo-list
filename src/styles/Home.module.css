@@ -1,0 +1,21 @@
+.item {
+  @apply py-3 px-3 border border-t-0 border-gray-700 cursor-pointer text-left flex items-center;
+}
+
+.item:first-child {
+  @apply border-t rounded-t;
+}
+
+.item:last-child {
+  @apply rounded-b;
+}
+
+.done {
+  opacity: 0.5 !important;
+  text-decoration: line-through !important;
+}
+
+.error {
+  border: 1px solid rgb(195, 48, 48) !important;
+  box-shadow: 1px 1px 4px 1px rgb(195, 48, 48) !important;
+}
