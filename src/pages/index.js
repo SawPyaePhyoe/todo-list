@@ -18,19 +18,24 @@ export default function Home() {
         <h1 className="text-4xl">Todo App</h1>
       </div>
       <div className="pt-12 ">
-        <form onSubmit={TodoAdd} className="flex flex-col gap-3">
-          <AddTask />
+        <AddTask />
+        <form onSubmit={TodoAdd} className="flex  gap-1">
           {show && (
-            <input
-              autoFocus
-              type="text"
-              name=""
-              id="task"
-              className="w-full rounded py-2 px-4 text-gray-900 border border-gray-700 outline-0 "
-              value={todoList}
-              onKeyPress={ErrorRemove}
-              onChange={(e) => settodoList(e.target.value)}
-            />
+            <>
+              <input
+                autoFocus
+                type="text"
+                name=""
+                id="task"
+                className="w-full rounded py-2 px-4 text-gray-900 border border-gray-700 outline-0 "
+                value={todoList}
+                onKeyPress={ErrorRemove}
+                onChange={(e) => settodoList(e.target.value)}
+              />
+              <button className=" hover:bg-transparent bg-blue-500 hover:text-blue-700 font-semibold text-white py-2 px-4 border hover:border-blue-500 border-transparent rounded uppercase">
+                Add
+              </button>
+            </>
           )}
         </form>
       </div>
