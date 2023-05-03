@@ -9,7 +9,7 @@ const AddTask = () => {
   return (
     <p
       onClick={InputShow}
-      className="cursor-pointer  w-full flex justify-center items-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+      className="mb-5 cursor-pointer  w-full flex justify-center items-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
     >
       Add new task
       <AiOutlinePlus size={12} className="ml-2" />
