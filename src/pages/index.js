@@ -13,7 +13,7 @@ export default function Home() {
     useContext(ToDoContext);
 
   return (
-    <div className="w-2/4 mx-auto pb-14">
+    <div className="max-w-[700px] mx-3 pb-14 md:mx-auto">
       <div className="pt-12">
         <h1 className="text-4xl">Todo App</h1>
       </div>
